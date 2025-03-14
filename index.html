@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/csshome.css">
+	<script src="scripts/jquery.js"></script>
+	
+	<!-- source code for arrow icon taken from: https://fontawesome.com/kits/96f68cb0ec/use?welcome=yes 
+			by: fontawesome.com -->
+	<script src="https://kit.fontawesome.com/96f68cb0ec.js" crossorigin="anonymous"></script>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Home</title>
+</head>
+
+
+
+<body class="homepage">
+
+	<button onclick="backToTopFunction()"  id="backToTopButton" title="Go to top">
+	<i class="fa-solid fa-circle-arrow-up"></i></button>	
+	
+	
+	<div class="transparent"> 
+
+		<ul class="navBar">
+		  
+				  <!-- Home tab -->
+				  <li><a href="index.html">Home</a></li> 
+				  
+				  <!-- for West Can drop down -->
+				  <li class="dropdown">
+						<button class="dropbtn">Western Canada</button>
+						<div class="dropdown-content">
+							<a href="Calgary.html">Calgary, AB</a>
+							<a href="edmonton.html">Edmonton, AB</a>
+							<a href="vancouver.html">Vancouver, BC</a>
+							<a href="victoria.html">Victoria, BC</a>
+						</div>
+				  </li>
+				  
+					<!-- for Prairie drop down -->
+					<li class="dropdown">
+						<button class="dropbtn">Prairies</button>
+						<div class="dropdown-content">
+							<a href="regina.html">Regina, SK</a>
+							<a href="saskatoon.html">Saskatoon, SK</a>
+							<a href="winnipeg.html">Winnipeg, MB</a>
+						</div>
+					</li>
+				  
+					<!-- for East Can drop down -->
+					<li class="dropdown">
+						<button class="dropbtn">Eastern Canada</button>
+						<div class="dropdown-content">
+							<a href="ottawa.html">Ottawa, ON</a>
+							<a href="montreal.html">Montreal, QC</a>
+							<a href="toronto.html">Toronto, ON</a>
+							<a href="hamilton.html">Hamilton, ON</a>
+						</div>
+					</li>
+				  
+					<!-- for Maritimes drop down -->
+					<li class="dropdown">
+						<button class="dropbtn">Maritimes</button>
+						<div class="dropdown-content">
+							<a href="fredericton.html">Fredericton, NB</a>
+							<a href="Halifax.html">Halifax, NS</a>
+							<a href="charlottetown.html">Charlottetown, PEI</a>
+							<a href="stjohns.html">St. John's, NL</a>
+						</div>
+					</li>
+					
+					<!-- Map tab -->
+					<li><a href="map.html">Map & FAQs</a></li>
+					
+				</ul>
+
+	
+		<!-- title header -->
+		<h1 id="myHeader">A Quick Guide to Sports in Canada<br><em>(For Every Sports Fan)</em></h1>
+
+
+	<!-- intro -->
+	<div class="intro">
+		<p>Welcome to Canada's One-Stop Shop for Sports Tourism!</p>
+		<br>
+		<p>Everything you need to know about Canadian professional sport teams and more...organized by different regions of Canada.</p>
+	</div>
+
+
+	<!-- League panels title -->
+	<hr>
+	<h3 id="leaguesTitle"><em>Click each panel to see what leagues Canada has professional sports teams in</em></h3>
+	<br>
+		
+	<!-- LEAGUE PANELS -->
+	
+	  <div id="hockey"> <div class="sport">Hockey</div>
+		  <img src="images/hockey.png" alt="Hockey icon"  width="100%" height="100%">
+	  </div>
+	  <div id="hockeySlideout">(NHL)<br>National Hockey League</div>
+	  
+	  
+	  <div id="basketball"> <div class="sport">Basketball</div>
+		  <img src="images/basketball.png" alt="Basketball icon" width="82.5%" height="82.5%">
+	  </div>
+	  <div id="basketballSlideout">(NBA)<br>National Basketball Association</div>
+	  
+	  
+	   <div id="baseball"> <div class="sport">Baseball</div>
+		  <img src="images/baseball.png" alt="Baseball icon" width="82.5%" height="82.5%">
+	  </div>
+	  <div id="baseballSlideout">(MLB)<br>Major League Baseball</div>
+	  
+	  
+	  <div id="football"> <div class="sport">Football</div>
+		  <img src="images/football.png" alt="Football icon" width="82.5%" height="82.5%">
+	  </div>
+	  <div id="footballSlideout">(CFL)<br>Canadian Football League</div>
+	  
+	  
+	  <div id="soccer"> <div class="sport">Soccer</div>
+		  <img src="images/soccer.png" alt="Soccer icon" width="82.5%" height="82.5%">
+	  </div>
+	  <div id="soccerSlideout">(MLS)<br>Major League Soccer<hr>(CPL)<br>Canadian Premier League</div>
+	  
+	  
+	  <div id="lacrosse"> <div class="sport">Lacrosse</div>
+		  <img src="images/lacrosse.png" alt="Lacrosse icon" width="82.5%" height="82.5%">
+	  </div>
+	  <div id="lacrosseSlideout">(NLL)<br>National Lacrosse League</div>
+	  
+	<br>
+	<hr>
+
+
+
+	<div> <!-- table of cities -->
+	<table class="citiesTable">
+	  <tr>
+		<h3><th>League</th>
+		<th># of Canadian Teams / <br># Teams in League</th>
+		<th>Cities</th>
+	  </tr>
+	  <tr>
+		<td>NHL</td>
+		<td>7/32</td>
+		<td>Ottawa, Toronto, Montreal, Calgary, Edmonton, Vancouver, Winnipeg</td>
+	  </tr>
+	  <tr>
+		<td>NBA</td>
+		<td>1/30</td>
+		<td>Toronto</td>
+	  </tr>
+	  <tr>
+		<td>MLB</td>
+		<td>1/30</td>
+		<td>Toronto</td>
+	  </tr>
+	  <tr>
+		<td>CFL</td>
+		<td>9/9</td>
+		<td>Ottawa, Toronto, Montreal, Hamilton, Calgary, Edmonton, Vancouver, Winnipeg, Regina</td>
+	  </tr>
+	  <tr>
+		<td>MLS</td>
+		<td>3/28</td>
+		<td>Toronto, Montreal, Vancouver</td>
+	  </tr>
+	  <tr>
+		<td>CPL</td>
+		<td>8/8</td>
+		<td>Ottawa, Toronto, Hamilton, Calgary, Edmonton, Victoria, Winnipeg, Halifax</td>
+	  </tr>
+	  <tr>
+		<td>NLL</td>
+		<td>5/14</td>
+		<td>Toronto, Calgary, Vancouver, Saskatoon, Halifax</td>
+	  </tr>
+	</table>
+	</div>  <!-- end of table of cities -->
+	<hr>
+
+
+
+		<!--contact me intro-->
+		<h3 class="contact">Contact Me</h3>
+		<p class="contact">I'm eager to help you. Contact me if you have any questions, comments or concerns!</p>
+
+
+		<!--contact details form-->
+		<div class="contactForm">
+			<form action="mailto:nicholas.avarello@gmail.com" method="post" enctype="text/plain">
+				<fieldset>			<!--box around-->
+				<legend>Contact Details</legend>
+
+				<label for="name">Name:</label>
+				<input type="text" placeholder="Name" id="name" name="name"><br><br>
+				<label for="email">Email:</label>
+				<input type="text" placeholder="Email" id="email" name="email"><br><br>
+			
+
+				Your Message:<br>
+				<textarea name="message" rows="7" cols="40">
+
+				</textarea><br>
+				<input type="submit"  value="Send Message">
+				<input type="reset">
+
+				</fieldset>
+			</form>
+		</div>  <!-- end of contact details form -->
+		<br>
+		<br>
+		
+
+		<!-- disclaimer -->
+		
+		<p class="disclaimerTitle">DISCLAIMER</p>
+		
+		<div class="disclaimerMessage">
+			<p><em>Due to their small population, the 3 Canadian Territories (Nunavut, the Northwest Territories, and the 
+			Yukon) do not have any major sports teams. However, recreational sports in these regions include hiking, 
+			snowshoeing, cross country skiing, and ice fishing. The website will not discuss these sporting options or regions.</em></p>
+		</div>
+	
+	</div>  <!-- end of .transparent-->
+
+	<script src="scripts/javascripthome.js"></script>
+
+  </body>
+</html>
+
+
+
+<!--
+Sources for content on this page:
+Image: hockey.png - https://www.freeiconspng.com/img/48027 
+Image: basketball.jpg - https://www.flaticon.com/free-icon/basketball_889455
+Image: baseball.png - https://pngset.com/download-free-png-ujmeo
+Image: football.png - https://commons.wikimedia.org/wiki/File:American_football_icon_simple.svg
+Image: soccer.jpg - https://www.flaticon.com/free-icon/soccer-ball_53283
+Image: lacrosse.png - https://www.flaticon.com/free-icon/lacrosse_145188
+
+-->
