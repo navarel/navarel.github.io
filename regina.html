@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/csshome.css">
+	<script src="scripts/jquery.js"></script>
+
+	<!-- source code for arrow icon taken from: https://fontawesome.com/kits/96f68cb0ec/use?welcome=yes 
+			by: fontawesome.com -->
+	<script src="https://kit.fontawesome.com/96f68cb0ec.js" crossorigin="anonymous"></script>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Regina</title>
+</head>
+
+
+<body class="regina">
+
+	<button onclick="backToTopFunction()"  id="backToTopButton" title="Go to top">
+	<i class="fa-solid fa-circle-arrow-up"></i></button>
+	
+	<div class="transparent"> 
+		<ul class="navBar">
+				  
+				  <!-- Home tab -->
+				  <li><a href="index.html">Home</a></li> 
+				  
+				  <!-- for West Can drop down -->
+				  <li class="dropdown">
+						<button class="dropbtn">Western Canada</button>
+						<div class="dropdown-content">
+							<a href="Calgary.html">Calgary, AB</a>
+							<a href="edmonton.html">Edmonton, AB</a>
+							<a href="vancouver.html">Vancouver, BC</a>
+							<a href="victoria.html">Victoria, BC</a>						
+						</div>
+				  </li>
+				  
+					<!-- for Prairie drop down -->
+					<li class="dropdown">
+						<button class="dropbtn">Prairies</button>
+						<div class="dropdown-content">
+							<a href="regina.html">Regina, SK</a>
+							<a href="saskatoon.html">Saskatoon, SK</a>
+							<a href="winnipeg.html">Winnipeg, MB</a>
+						</div>
+					</li>
+				  
+					<!-- for East Can drop down -->
+					<li class="dropdown">
+						<button class="dropbtn">Eastern Canada</button>
+						<div class="dropdown-content">
+							<a href="ottawa.html">Ottawa, ON</a>
+							<a href="montreal.html">Montreal, QC</a>
+							<a href="toronto.html">Toronto, ON</a>
+							<a href="hamilton.html">Hamilton, ON</a>
+						</div>
+					</li>
+				  
+					<!-- for Maritimes drop down -->
+					<li class="dropdown">
+						<button class="dropbtn">Maritimes</button>
+						<div class="dropdown-content">
+							<a href="fredericton.html">Fredericton, NB</a>
+							<a href="Halifax.html">Halifax, NS</a>
+							<a href="charlottetown.html">Charlottetown, PEI</a>
+							<a href="stjohns.html">St. John's, NL</a>
+						</div>
+					</li>
+					
+					<!-- Map tab -->
+					<li><a href="map.html">Map & FAQs</a></li>
+				</ul>
+
+
+
+		<!-- 
+		
+		*** All the teams 
+		
+		-->
+		
+		
+			<!-- clock  - taken from: https://www.javascriptfreecode.com/32.htm coded by: Kerixa Inc. -->
+		<body onLoad="startclockMST()">
+		
+		<div class="localTimeClock">
+			<form name="clock" onSubmit="0">
+			<label for="name"><span>Local Time:</span></label>
+			<input type="text" name="face" size=8 value="" disabled> 
+		</div>
+		
+		<!-- Google Map of city -->
+		<div class="mapOf">Map of Regina</div>
+		<div id="regMap"></div>
+		
+		
+		<!-- Current Weather -->
+		<div class="localWeather">Current Weather</div>
+		
+		<div class="weatherBox" style="right:250px">
+		
+			<img class="icon" style="float: left">
+			<p class="regWeaText"></p>
+			<p class="regTemp"></p>
+			<p class="regFeels"></p>
+		</div>
+		
+		
+		<!-- header -->
+		<h1 id="city">Regina, Saskatchewan</h1>
+		<h2 class="prorec">Professional Teams</h2>
+		
+		
+
+	<!-- roughriders -->
+		<h3 class="teams">Saskatchewan Roughriders - CFL Football</h3>
+		<img src="images/riders.png" alt="Saskatchewan Roughriders logo" width="140" height="100" style="float: left; margin:13px 20px">
+		<br>
+		<p class="teams">
+			Season: June to November<br>
+			Venue: Mosaic Stadium<br>
+			Website: <a href="https://www.riderville.com/">Saskatchewan Roughriders</a><br>
+			Twitter: <a href="https://twitter.com/sskroughriders">@Sskroughriders</a><br>
+		</p>
+		<hr class="none">
+
+
+	<h2 class="prorec">Recreational Activities</h2>  
+	
+	
+		<!-- for golf -->
+	
+		<h3 class="golfskiheaders">Golf</h3>
+
+
+		<img src="images/deervalley.jpg" alt="Deer Valley Golf Club" width="510px" height="300px" style="float: right; margin:150px 5px">
+		
+		<div class="golfski">		
+			<span>Deer Valley Golf Club</span><br>
+			Website: <a href="https://deervalleygolf.ca/">Deer Valley Golf Club</a><br>
+			Location: Deer Valley, Saskatchewan (0.5hr drive from Regina)<br>
+			<hr class="golfski">
+			
+			<span>Murray Golf Course</span><br>
+			Website: <a href="https://www.lakelandgolfmanagement.com/our-golf-courses/murray">Murray Golf Course</a><br>
+			Location: Regina, Saskatchewan (0.5hr drive from Regina)<br>
+			<hr class="golfski">
+			
+			<span>Royal Regina Golf Club</span><br>
+			Website: <a href="https://royalregina.com/">Royal Regina Golf Club</a><br>
+			Location: Regina, Saskatchewan (0.25hr drive from Regina)<br>
+			<hr class="golfski">
+
+			<span>Wascana Country Club Golf Course</span><br>
+			Website: <a href="https://www.wascanacountryclub.com/">Wascana Country Club Golf Course</a><br>
+			Location: Regina, Saskatchewan (0.25hr drive from Regina)<br>
+			<hr class="fix">
+		
+		</div>  <!-- end of golfski div -->		
+		
+		
+		<!-- for skiing -->
+
+		<h3 class="golfskiheaders">Ski</h3>
+
+		<img src="images/missionridge.jpg" alt="Mission Ridge Winter Park" width="390px" height="250px" style="float: right; margin:0px 5px">
+		
+		<div class="golfski">		
+			<span>Mission Ridge Winter Park</span><br>
+			Website: <a href="http://www.missionridge.ca/">Mission Ridge Winter Park</a><br>
+			Location: Fort Qu'Appelle, Saskatchewan (1hr drive from Regina)<br>
+			<hr class="golfski">
+			
+			<span>Duck Mountain Ski Area</span><br>
+			Website: <a href="https://skitheduck.com/">Duck Mountain Ski Area</a><br>
+			Location: Kamsack, Saskatchewan (3.5hr drive from Regina)<br>
+			<br>
+			<br>
+			
+		</div>  <!-- end of golfski div -->		
+			
+		
+		
+		</div> <!-- end of .transparent-->
+		
+	<script src="scripts/javascripthome.js"></script>
+
+	<script async
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5jleOMDcFhg0RUOZFBcGAs8SMM2Hg0Rk&callback=regMapFunction">
+	</script>
+	
+</body>
+
+</html>
+
+
+<!--
+Sources for content on this page:
+Image: riders.png - https://en.wikipedia.org/wiki/Saskatchewan_Roughriders
+Image: missionridge.jpg - https://www.tourismsaskatchewan.com/listings/1896/mission-ridge-winter-park
+Image: deervalley.jpg - https://deervalleygolf.ca/pages/about-best-golf-course-in-regina-golf-courses-reginafolf-course-deer-valley-golf-course-regina-deer-valley
+
+-->

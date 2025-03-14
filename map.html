@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/csshome.css">
+	<script src="scripts/jquery.js"></script>
+	
+	<!-- source code for arrow icon taken from: https://fontawesome.com/kits/96f68cb0ec/use?welcome=yes 
+			by: fontawesome.com -->
+	<script src="https://kit.fontawesome.com/96f68cb0ec.js" crossorigin="anonymous"></script>
+	
+	
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Map</title>
+</head>
+
+
+
+<body class="mapbackground">  
+
+
+	<button onclick="backToTopFunction()"  id="backToTopButton" title="Go to top">
+	<i class="fa-solid fa-circle-arrow-up"></i></button>
+	
+	
+	<div class="alignment">
+			<ul class="navBar">
+				  
+				  
+				  <!-- Home tab -->
+				  <li><a href="index.html">Home</a></li>
+				  
+				  <!-- for West Can drop down -->
+				  <li class="dropdown">
+						<button class="dropbtn">Western Canada</button>
+						<div class="dropdown-content">
+							<a href="Calgary.html">Calgary, AB</a>
+							<a href="edmonton.html">Edmonton, AB</a>
+							<a href="vancouver.html">Vancouver, BC</a>
+							<a href="victoria.html">Victoria, BC</a>							
+						</div>
+				  </li>
+				  
+					<!-- for Prairie drop down -->
+					<li class="dropdown">
+						<button class="dropbtn">Prairies</button>
+						<div class="dropdown-content">
+							<a href="regina.html">Regina, SK</a>
+							<a href="saskatoon.html">Saskatoon, SK</a>
+							<a href="winnipeg.html">Winnipeg, MB</a>
+						</div>
+					</li>
+				  
+					<!-- for East Can drop down -->
+					<li class="dropdown">
+						<button class="dropbtn">Eastern Canada</button>
+						<div class="dropdown-content">
+							<a href="ottawa.html">Ottawa, ON</a>
+							<a href="montreal.html">Montreal, QC</a>
+							<a href="toronto.html">Toronto, ON</a>
+							<a href="hamilton.html">Hamilton, ON</a>
+						</div>
+					</li>
+				  
+					<!-- for Maritimes drop down -->
+					<li class="dropdown">
+						<button class="dropbtn">Maritimes</button>
+						<div class="dropdown-content">
+							<a href="fredericton.html">Fredericton, NB</a>
+							<a href="Halifax.html">Halifax, NS</a>
+							<a href="charlottetown.html">Charlottetown, PEI</a>
+							<a href="stjohns.html">St. John's, NL</a>
+						</div>
+					</li>
+					
+					<!-- Map tab -->
+					<li><a href="map.html">Map & FAQs</a></li>
+			</ul>	
+
+
+
+		<!-- 
+		
+		*** Map
+		
+		--> 
+		
+		
+		<!-- header -->
+		<h1 id="city">Map of Canada</h1>
+
+
+		<!-- Map of Canada image -->
+		<div class="map">
+
+		<div class="container">
+			<img src="images/canadamap.png" alt="Map of Canada" width="100%">
+		
+		
+		
+			<!-- city markers --> 
+		
+			<div class="btn" id="vicMark" onclick="vicFunction()">
+				<span class="citypopup" class="vicPU" id="vicPopup">Victoria, BC</span>
+			</div>
+			
+			<div class="btn" id="vanMark" onclick="vanFunction()">
+				<span class="citypopup" class="vanPU" id="vanPopup">Vancouver, BC</span>
+			</div>
+
+			<div class="btn" id="edmMark" onclick="edmFunction()">
+				<span class="citypopup" id="edmPopup">Edmonton, AB</span>
+			</div>			
+	
+			<div class="btn" id="calMark" onclick="calFunction()">
+				<span class="citypopup" id="calPopup">Calgary, AB</span>
+			</div>	
+			
+			<div class="btn" id="regMark" onclick="regFunction()">
+				<span class="citypopup" id="regPopup">Regina, SK</span>
+			</div>	
+			
+			<div class="btn" id="saskMark" onclick="saskFunction()">
+				<span class="citypopup" id="saskPopup">Saskatoon, SK</span>
+			</div>	
+			
+			<div class="btn" id="winMark" onclick="winFunction()">
+				<span class="citypopup" id="winPopup">Winnipeg, MB</span>
+			</div>	
+			
+			<div class="btn" id="hamMark" onclick="hamFunction()">
+				<span class="citypopup" id="hamPopup">Hamilton, ON</span>
+			</div>	
+			
+			<div class="btn" id="torMark" onclick="torFunction()">
+				<span class="citypopup" id="torPopup">Toronto, ON</span>
+			</div>	
+			
+			<div class="btn" id="ottMark" onclick="ottFunction()">
+				<span class="citypopup" id="ottPopup">Ottawa, ON</span>
+			</div>	
+			
+			<div class="btn" id="mtlMark" onclick="mtlFunction()">
+				<span class="citypopup" id="mtlPopup">Montreal, QC</span>
+			</div>	
+			
+			<div class="btn" id="fredMark" onclick="fredFunction()">
+				<span class="citypopup" id="fredPopup">Fredericton, NB</span>
+			</div>	
+			
+			<div class="btn" id="halMark" onclick="halFunction()">
+				<span class="citypopup" id="halPopup">Halifax, NS</span>
+			</div>	
+			
+			<div class="btn" id="charMark" onclick="charFunction()">
+				<span class="citypopup" id="charPopup">Charlottetown, PEI</span>
+			</div>	
+			
+			<div class="btn" id="stjMark" onclick="stjFunction()">
+				<span class="citypopup" id="stjPopup">St. John's, NL</span>
+			</div>	
+			
+			
+			
+			<!-- province labels --> 
+			
+			<div class="provinces" id="bc">British<br>Columbia (BC)</div>
+			
+			<div class="provinces" id="alberta">Alberta</div>
+			
+			<div class="provinces" id="saskatchewan">Saskatchewan</div>
+			
+			<div class="provinces" id="manitoba">Manitoba</div>
+			
+			<div class="provinces" id="ontario">Ontario</div>
+			
+			<div class="provinces" id="quebec">Quebec</div>
+			
+			<div class="provinces" id="pei"><nobr><----- Prince Edward Island (PEI)</nobr></div>
+			
+			<div class="provinces" id="newbrunswick">New Brunswick</div>
+			
+			<div class="provinces" id="novascotia"><nobr>Nova Scotia</nobr></div>
+			
+			<div class="provinces" id="newfl">Newfoundland & Labrador</div>
+			
+			<div class="provinces" id="yukon">Yukon</div>
+			
+			<div class="provinces" id="nwt">Northwest Territories</div>
+			
+			<div class="provinces" id="nunavut">Nunavut</div>
+			
+			<div class="hint"><em>Click the grey dots to identify the cities</em></div>
+			
+		</div>   <!-- end of .container -->
+		
+
+	</div> <!-- end of .map -->
+
+
+<br><br><br>
+
+
+		<!-- 
+		
+		*** FAQ list
+		
+		--> 
+
+
+	<!-- header -->
+		<h1 id="city">Frequently Asked Questions (FAQs)</h1>
+		
+		
+		<!-- FAQ questions and answers -->
+		
+		<button class="question">What are the driving distances between cities?</button>
+		<div class="answer">
+		  <p>Canada is a very large country based on its land mass. For example, average driving time from Toronto to Ottawa
+		  is a 4 hour drive. Toronto to Vancouver is a 45 hour drive. For longer distances search Canada's main airline, 
+		  <a href="https://www.aircanada.com/us/en/aco/home.html" target="_blank">Air Canada</a> or Canada's main rail 
+		  service, <a href="https://www.viarail.ca/en" target="_blank">Via Rail</a>.</p>
+		</div>
+		
+		<button class="question">Quebec City is the capital city of the province of Quebec. Why is Quebec City not included in the 
+		Eastern Canada cities or identified on the map?</button>
+		<div class="answer">
+		  <p>Although it is the provincial capital, Quebec City does not have a professional sports team. Montreal, the largest
+			 city in Quebec, is the only city in Quebec with a professional sports team.</p>
+		</div>
+		
+		<button class="question">Why are only 15 cities listed?</button>
+		<div class="answer">
+		  <p>Each of these cities have at least 1 professional sports team. For the provinces that 
+		  do not have a professional sports team, the provincal capital city is listed to identify
+		  the recreational activities.</p>
+		</div>
+		
+		<button class="question">How do I know that the golf courses listed are top-rated?</button>
+		<div class="answer">
+		  <p>These have been identified using The Top 100 Golf Courses website provided <a href="https://www.top100golfcourses.com/golf-courses/north-america/canada" target="_blank">here</a>.
+		  Under North America, select Canada (or each province) to view the top-rated golf courses. </p>
+		</div>	
+
+		<button class="question">If no professional teams are in Fredericton, Charlottetown, or St. John’s, are there any other junior or <br> semi-professional sport teams in these areas?</button>
+		<div class="answer" id="lastAnswer">
+		  <p> Yes, the cities and teams are listed below:
+		  <br>
+		  <br>
+		  Fredericton
+		  <li>Moncton Wildcats - Hockey (QMJHL - junior)</li>
+		  <li>Saint John Sea Dogs - Hockey (QMJHL - junior)</li>
+		  <br>
+		  Charlottetown
+		  <li>Charlottetown Islanders - Hockey (QMJHL - junior)</li>
+		  <br>
+		  St. John's
+		  <li>Newfoundland Growlers - Hockey (ECHL - semi-professional)</li>
+		  
+		  </p>
+		</div>
+		
+
+	</div>  <!-- end of .alignment -->
+				
+	<script src="scripts/javascripthome.js"></script>
+	
+</body>
+
+
+</html>
+
+
+
+
+<!--
+Sources for content on this page:
+Image: canadamap.png - https://en.wikipedia.org/wiki/File:Canada_blank_map.svg
+
+-->
